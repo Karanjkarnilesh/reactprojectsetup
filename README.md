@@ -66,3 +66,24 @@ npm run watch
 
 add go to browser controller route 
 
+app.js
+--------------
+import React, { Component } from 'react';
+import ReactDom from 'react-dom';
+
+export default class App extends Component {
+  render() {
+    return (
+      <div>Hello</div>
+    )
+  }
+}
+const root = ReactDom.createRoot(document.getElementById("root"));
+root.render(
+  <React.StrictMode>
+    <App />
+  </React.StrictMode>
+);
+
+// ReactDom.creat(<App/>,document.getElementById('root'));
+
